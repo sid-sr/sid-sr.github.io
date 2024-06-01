@@ -130,6 +130,38 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-heading {
+.cards {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px;
+  display: grid;
+  direction: rtl;
+}
+
+.exp-cards {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px;
+  display: grid;
+}
+
+.center {
+  display: flex; justify-content: center; align-items: center;
+}
+
+
+.card {
+  direction: ltr;
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: 0.7fr 1fr; }
+}
+
+@media (min-width: 900px) {
+  .exp-cards { grid-template-columns: 1fr 2fr; }
+}
+
+.heading {
   font-size: 26px;
 }
